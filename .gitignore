@@ -1,0 +1,6 @@
+*.pth
+*.log
+*.tmp
+*.pyc
+/models
+/models/*

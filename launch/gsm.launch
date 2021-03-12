@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<launch>
+	<arg name="models_dir" value="/home/$(optenv USER)/.gazebo/models/" />
+
+    <node 
+    	name="gazebo_scene_manipulator" 
+    	pkg="gazebo_scene_manipulation" 
+    	type="gsm.py" 
+    	output="screen">
+    	<param name="models_dir" type="str" value="$(arg models_dir)"/>
+    </node>
+</launch>
